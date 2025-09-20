@@ -6,8 +6,9 @@ Collaborate, contribute, and create **fast, user-friendly, and future-ready** ap
 
 ---
 <div align="center">
-  <img src="https://img.freepik.com/free-vector/flat-web-development-concept_23-2148155768.jpg" alt="Web Development Banner" width="700"/>
+  <img src="https://images.pexels.com/photos/7034295/pexels-photo-7034295.jpeg" alt="Web Development Banner" width="700"/>
 </div>
+
 ---
 
 ## 🛠️ Tech Stack

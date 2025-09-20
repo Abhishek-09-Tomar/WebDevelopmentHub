@@ -5,7 +5,9 @@ Here we explore **responsive designs, interactive frontends, and scalable backen
 Collaborate, contribute, and create **fast, user-friendly, and future-ready** applications.  
 
 ---
-![Web Development Banner](https://img.freepik.com/free-vector/flat-web-development-concept_23-2148155768.jpg)  
+<div align="center">
+  <img src="https://img.freepik.com/free-vector/flat-web-development-concept_23-2148155768.jpg" alt="Web Development Banner" width="700"/>
+</div>
 ---
 
 ## 🛠️ Tech Stack

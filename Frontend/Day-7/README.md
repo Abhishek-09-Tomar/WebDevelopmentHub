@@ -20,7 +20,7 @@ With CSS, you can control:
 
 ---
 
-## 🎨 Ways to Use CSS
+##  Ways to Use CSS
 1. **Inline CSS**  
    Applied directly in an element using the `style` attribute.  
 
@@ -79,7 +79,7 @@ p {
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 1. Clone this repository  
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
@@ -90,15 +90,6 @@ p {
 3. Explore the examples and learn CSS step by step!
 
 ---
-
-## 📂 Project Structure
-```
-.
-├── index.html   # Main tutorial page with examples
-├── styles.css   # Example external stylesheet
-└── README.md    # Documentation
-```
-
 ---
 
 ## ✨ Author

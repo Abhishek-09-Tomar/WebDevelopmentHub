@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links Tutorial</title>
+
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            background: #4682b4;
+            color: white;
+            border-bottom: 3px solid #2c3e50;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-sizing: border-box;
+        }
+
+        #page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            background: #fff8dc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        h3 {
+            text-decoration: underline;
+            margin: 10px 0;
+        }
+
+        p {
+            background-color: #e6f2ff;
+            border: 2px solid #4682b4;
+            padding: 10px;
+            width: fit-content;
+            border-radius: 5px;
+            max-width: 100%;
+            word-wrap: break-word;
+        }
+
+        ul {
+            margin: 10px 0 20px 20px;
+            padding-left: 20px;
+        }
+
+        a {
+            margin: 5px;
+            display: inline-block;
+            text-decoration: none;
+            color: #00509e;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e63946;
+            text-decoration: underline;
+        }
+
+        img {
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive adjustments for small devices */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            #page {
+                padding: 15px;
+            }
+
+            p {
+                padding: 8px;
+            }
+
+            a {
+                margin: 3px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Links - Hyperlinks</h1>
+
+    <section id="page">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>
+                HTML links are <strong>hyperlinks</strong>.
+                You can click on a link and jump to another document or website.
+            </p>
+
+            <h2>Examples of Links</h2>
+            <p>
+                <a href="https://google.com/" target="_parent">Visit Google</a>
+                <a href="https://facebook.com/" target="_blank">Visit Facebook</a>
+                <a href="https://instagram.com/" target="_blank">Visit Instagram</a>
+                <a href="https://abhishek-09-tomar.github.io/Portfolio-Website/" target="_top">Visit Abhishek's
+                    Portfolio</a>
+            </p>
+
+            <h2>Target Attribute Usage</h2>
+            <h3>We have 4 types of target attributes that decide where the link will open:</h3>
+            <ul>
+                <li><strong>_self :</strong> Opens the link in the same page (default).</li>
+                <li><strong>_blank :</strong> Opens the link in a new tab.</li>
+                <li><strong>_parent :</strong> Opens the link in the parent frame (useful in nested frames).</li>
+                <li><strong>_top :</strong> Opens the link in the full body of the window, removing any frames.</li>
+            </ul>
+
+            <h2>Relative URL vs Absolute URL</h2>
+            <p><strong>Relative URL:</strong> Specifies the location of a resource relative to the current page.
+                It does not include the domain name.</p>
+            <ul>
+                <li><a href="about.html">Relative Example 1: about.html</a></li>
+                <li><a href="assets/model.jpg">Relative Example 2: assets/model.jpg</a></li>
+            </ul>
+
+            <p><strong>Absolute URL:</strong> Specifies the complete address of a resource,
+                including protocol (http/https), domain, and full path.</p>
+            <ul>
+                <li><a href="https://www.google.com">Absolute Example 1: https://www.google.com</a></li>
+                <li><a href="https://www.wikipedia.org/images/logo.png">Absolute Example 2:
+                        https://www.wikipedia.org/images/logo.png</a></li>
+            </ul>
+
+            <h2>HTML Links - Use an Image as a Link</h2>
+            <p>
+                You can also use an image as a hyperlink by wrapping it inside an <code>&lt;a&gt;</code> (anchor) tag.
+                <br><br>
+                Example:
+            </p>
+            <a href="https://pixabay.com/" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2024/11/02/17/29/city-9169729_1280.jpg"
+                    alt="Beautiful Landscape">
+            </a>
+        </div>
+
+        <div>
+            <h2>Link Email Address</h2>
+            <a href="mailto:someone@example.com">Send email</a>
+        </div>
+
+        <div>
+            <h2>Button as a Link</h2>
+            <p>To use an HTML button as a link, you have to add some JavaScript code.
+                <br>
+                JavaScript allows you to specify what happens at certain events, such as a click of a button:
+            </p>
+
+            <button title="Abhishek-Tomar-protfolio-website"
+                onclick="window.location.href='https://abhishek-09-tomar.github.io/Portfolio-Website/'">
+                Abhishek Tomar
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>

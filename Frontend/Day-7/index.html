@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Styles - CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+            font-family: verdana;
+            font-size: 300%;
+        }
+
+        p {
+            color: red;
+            font-family: courier;
+            font-size: 160%;
+        }
+
+        .styles_example {
+            text-align: center;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Styles - CSS</h1>
+    <hr />
+
+    <div>
+        <p><strong>CSS stands for Cascading Style Sheets.</strong></p>
+
+        <h2>What is CSS?</h2>
+        <p>
+            CSS is used to format the layout of a webpage.<br />
+            With CSS, you can control the color, font, the size of text, the spacing
+            between elements, how elements are positioned and laid out, what
+            background images or background colors are to be used, different
+            displays for different devices and screen sizes, and much more!
+        </p>
+
+        <p>
+            <em>Tip: The word <strong>cascading</strong> means that a style applied
+                to a parent element will also apply to all children elements within
+                the parent (unless overridden).</em>
+        </p>
+    </div>
+
+    <div>
+        <h2>Ways of using CSS in HTML</h2>
+        <ul>
+            <li>
+                <strong>Inline</strong> - by using the <code>style</code> attribute
+                inside HTML elements.
+            </li>
+            <li>
+                <strong>Internal</strong> - by using a
+                <code>&lt;style&gt;</code> element in the
+                <code>&lt;head&gt;</code> section.
+            </li>
+            <li>
+                <strong>External</strong> - by using a
+                <code>&lt;link&gt;</code> element to link to an external CSS file.
+            </li>
+        </ul>
+    </div>
+    <hr />
+
+    <div>
+        <h2>1. Inline CSS</h2>
+        <p style="
+          color: tomato;
+          font-size: 22px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-decoration: wavy;
+        ">
+            This is an example of <strong>inline CSS</strong> applied directly on
+            this paragraph.
+        </p>
+
+        <p style="color: darkviolet">
+            Another example with inline CSS: this paragraph is styled with
+            <code>color:darkviolet;</code>
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>2. Internal CSS</h2>
+        <p>
+            Internal CSS is written inside the <code>&lt;style&gt;</code> tag in the
+            head section.<br />
+            Example: In this page, the background color, h1 style, and paragraph
+            style are controlled by internal CSS.
+        </p>
+        <div class="styles_example">
+            <h3>
+                This text is styled using internal CSS with the class
+                <code>.styles_example</code>
+            </h3>
+        </div>
+    </div>
+    <hr />
+
+    <div>
+        <h2>3. External CSS</h2>
+        <p>
+            An external style sheet is used to define the style for many HTML pages
+            at once.<br />
+            You create a <code>.css</code> file and link it in the head section
+            using:
+        </p>
+        <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+        </pre>
+
+        <p>Example "styles.css" file:</p>
+        <pre>
+            body {
+            background-color: powderblue;
+            }
+            h1 {
+            color: blue;
+            }
+            p {
+            color: red;
+            }
+        </pre>
+    </div>
+    <hr />
+
+    <div>
+        <h2>CSS Colors, Fonts and Sizes</h2>
+        <h3 style="color: blue; font-family: verdana; font-size: 300%">
+            This is a heading
+        </h3>
+        <p style="color: red; font-family: courier; font-size: 160%">
+            This is a paragraph
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>CSS Border</h2>
+        <p style="border: 2px solid powderblue">This paragraph has a border.</p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>CSS Padding</h2>
+        <p style="border: 2px solid powderblue; padding: 30px">
+            This paragraph has border + padding (space inside the border).
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>CSS Margin</h2>
+        <p style="border: 2px solid powderblue; margin: 50px">
+            This paragraph has border + margin (space outside the border).
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>External CSS Path Examples</h2>
+        <p>Full URL:</p>
+        <pre>
+&lt;link rel="stylesheet" href="https://www.google.com/"&gt;</pre>
+
+        <p>Relative path (html folder):</p>
+        <pre>&lt;link rel="stylesheet" href="/html/styles.css"&gt;</pre>
+
+        <p>Same folder as page:</p>
+        <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+    </div>
+</body>
+
+</html>
